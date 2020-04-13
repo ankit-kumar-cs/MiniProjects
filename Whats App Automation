@@ -1,0 +1,17 @@
+'''Ensure that you are logged in on web.whatsapp.com
+'''
+import time
+from selenium.webdriver.common.keys import Keys
+from selenium import webdriver
+driver=webdriver.Firefox()
+driver1.get("https://web.whatsapp.com/")
+s=driver1.find_elements_by_xpath("//div[@class='_2wP_Y']/div/div/div[@class='_3j7s9']/div[1]/div[1]/span/span")
+for i in s:
+    if i.text=='Name of the person you want to send message Same as name saved in your phone':
+        i.click()
+        j=driver1.find_element_by_xpath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div[2]/div/div[2]")
+        break
+for x in range(Number of times you want to send the message):
+    j.send_keys("Your Message")
+    j.send_keys(Keys.ENTER)
+    time.sleep(2)#Time interval between each message
