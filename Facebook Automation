@@ -1,3 +1,6 @@
+'''Kindle ensure that you have downloaded Selenium Library
+This script will fetch the name of your friends
+'''
 import time
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
